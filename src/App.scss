@@ -2,6 +2,7 @@
 p{
   font-size: 16px;
 }
+
 .app{
   height: 100vh;
   background: $light-gray;
@@ -9,7 +10,31 @@ p{
   justify-content: center;
   align-items: center;
 }
+
 .form-container{
-  max-width: 80%;
-  height: 50%;
+  width: 55%;
+  height: 568px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  padding: 15px;
+}
+
+@media screen and (min-width: 768px){
+  .form-container{
+    width: 55%;
+    height: 568px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    padding: 30px;
+  }
+
+  .left-col {
+    flex: 0 0 274px;
+    background: url("./assets/images/bg-sidebar-desktop.svg") no-repeat;
+  }
+  .right-col {
+    flex: 1;
+  }
 }
