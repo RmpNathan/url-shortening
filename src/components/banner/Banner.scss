@@ -1,0 +1,35 @@
+.banner{
+  display: flex;
+  flex-direction: row;
+}
+.banner-text{
+  text-align: center;
+  flex-basis: 70%;
+  padding: 0 25px;
+}
+.banner-img {
+  flex-basis: 30%;
+  overflow: hidden;
+  img {
+    width: 120%;
+    padding: 0 25px;
+  }
+}
+.btn-contenair{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner{
+    flex-direction: column-reverse;
+    height: 650px;
+  }
+  .banner-text, .banner-img{
+    flex-basis: 100%;
+  }
+}
